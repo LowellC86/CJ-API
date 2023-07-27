@@ -1,3 +1,5 @@
+import os
+
 """
 Django settings for cjmonet_django project.
 
@@ -25,7 +27,7 @@ SECRET_KEY = 'django-insecure-sxje3*^7l-uf2srj(su31g2qte8#t2@*)%z__&o%r7457z6tv)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -102,10 +104,10 @@ WSGI_APPLICATION = 'cjmonet_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cjmonet',
-        'USER': 'cjmonetuser',
-        'PASSWORD': 'cjmonet',
-        'HOST': 'localhost'
+        'NAME': 'dyilcpwt',
+        'USER': 'dyilcpwt',
+        'PASSWORD': 'ouChQrhyLtrcy3gbFwDgs-cvKZmEZNOc',
+        'HOST': 'stampy.db.elephantsql.com'
     }
 }
 
