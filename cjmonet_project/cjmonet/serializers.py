@@ -14,7 +14,7 @@ class PaintingSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Painting
-        fields = ('id', 'artist_id', 'artist', 'title', 'preview_url', 'description')
+        fields = ('id', 'artist_id', 'artist', 'title', 'preview_url', 'description', 'price')
 
 
 class StickerSerializer(serializers.HyperlinkedModelSerializer):
@@ -30,7 +30,7 @@ class StickerSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Sticker
-        fields = ('id', 'artist_id', 'artist', 'title', 'image_url', 'description')
+        fields = ('id', 'artist_id', 'artist', 'title', 'image_url', 'description', 'price')
         
 class ArtistSerializer(serializers.HyperlinkedModelSerializer):
     paintings = PaintingSerializer(
