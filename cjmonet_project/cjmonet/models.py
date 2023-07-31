@@ -4,7 +4,7 @@ class Artist(models.Model):
     name = models.CharField(max_length=100)
     photo_url = models.TextField()
     description = models.TextField(default='')
-    
+
     def __str__(self):
         return self.name
 
@@ -13,6 +13,7 @@ class Painting(models.Model):
     title = models.CharField(max_length=100, default="no title")
     preview_url = models.CharField(max_length=200, null=True)
     description = models.TextField(default='')
+    price = models.DecimalField(max_digits=10, decimal_places=2, default=0) 
 
     def __str__(self):
         return self.title
@@ -22,6 +23,8 @@ class Sticker(models.Model):
     title = models.CharField(max_length=100, default="no title")
     image_url = models.CharField(max_length=200, null=True)
     description = models.TextField(default='')
+    price = models.DecimalField(max_digits=10, decimal_places=2, default=0)
 
     def __str__(self):
         return self.title
+
